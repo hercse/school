@@ -8,12 +8,14 @@
     <title>Document</title>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@0.4.0/dist/lottie-player.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+    <link rel="stylesheet" href="https://hercs.art/cdn/typogrid.css">
+    <link rel="stylesheet" href="https://hercs.art/cdn/variable.css">
 </head>
 
 <body>
     <style>
         .content {
-            height: 800vh;
+            height: 1200vh;
             /* margin-top: 200vh; */
             padding: 80vh 0;
         }
@@ -25,7 +27,7 @@
         lottie-player {
             position: sticky;
             margin: auto auto;
-            top: 0;
+            top: -10vw;
             bottom: 0;
             left: 0;
             /* margin-top: 100vh; */
@@ -35,7 +37,7 @@
     <div id="container" class="container">
         <div id="content" class="content">
             <!-- <div class="lottie"> -->
-            <lottie-player id="firstLottie" src="am.json" style="width:100%;height: 100vh;"></lottie-player>
+            <lottie-player id="firstLottie" src="am.json" style="width:100%;height: 100vw;"></lottie-player>
             <!-- </div> -->
         </div>
     </div>
@@ -46,7 +48,7 @@
         player: '#firstLottie',
         container: "#content",
         actions: [{
-            visibility: [0.2, 0.8],
+            visibility: [0.15, 0.8],
             type: 'seek',
             frames: [0, 816],
         }, ],
@@ -58,6 +60,9 @@
     // function complete() {
     //     $('#content svg').attr('preserveAspectRatio', 'xMidYMax slice');
     // }
+</script>
+<script type="module">
+    import {typogrid} from 'https://hercs.art/cdn/typogrid.js'; typogrid();
 </script>
 
 </html>
