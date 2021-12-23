@@ -60,31 +60,30 @@
     <div id="content" class="content">
         <div class="lottie">
             <lottie-player id="firstLottie" src="amination-hero.json" style="width: 100%; height: 56vw;"></lottie-player>
-            <lottie-player id="firstLottie" src="am.json" .json " style="width: 100%; height: 56vw; "></lottie-player>
         </div>
     </div>
 </body>
 <script>
     LottieInteractivity.create({
-        mode: "scroll ",
-        player: "#firstLottie ",
-        container: "#content ",
+        mode: "scroll",
+        player: "#firstLottie",
+        container: "#content",
         actions: [{
             visibility: [0.15, 0.8],
-            type: "seek ",
+            type: "seek",
             frames: [0, 808]
         }]
     });
     // //bind the complete function to the data_ready event of bodymovin's animation loader
-    // anim.addEventListener("data_ready ", complete);
+    // anim.addEventListener("data_ready", complete);
 
     // //set the attribute manually after the svg is loaded.
     // function complete() {
     //     $('#content svg').attr('preserveAspectRatio', 'xMidYMax slice');
     // }
 </script>
-<script type="module ">
-    import { typogrid } from "https://hercs.art/cdn/typogrid.js "; typogrid();
+<script type="module">
+    import { typogrid } from "https://hercs.art/cdn/typogrid.js"; typogrid();
 </script>
 
 <!-- 
